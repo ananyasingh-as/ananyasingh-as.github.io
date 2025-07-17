@@ -21,20 +21,15 @@
             text-rendering: optimizeLegibility;
         }
 
+        .header {
+            padding: 3em 0;
+        }
+
         .content {
             max-width: 640px;
             margin: auto;
         }
 
-        .headline {
-            max-width: 700px;
-            margin: auto;
-        }
-
-        .header {
-            padding: 3em 0;
-
-        }
 
         a {
             color: #f05349;
@@ -56,6 +51,11 @@
             font-size: 0.8em;
             margin-top: 4em;
             padding: 4em 0;
+        }
+
+        .header-img {
+            margin: 0;
+            padding-bottom: 0.5em;
         }
 
         figure {
@@ -83,26 +83,11 @@
             text-align: center
         }
 
-        .with-image-bg {
-            position: relative;
-            background-size: cover;
-            margin-bottom: 2em;
-
-            /* Center everything inside */
-            min-height: 70svh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            /* White text with a shadow */
-            color: black;
-    
+        .byline {
+            font-family: 'Lora', Georgia, serif;
+            font-weight: bold;
+            text-align: center
         }
-
-        .with-image-bg {
-            background-image: url('header.jpg');
-        }
-
 
         iframe,
         img,
@@ -138,10 +123,8 @@
 
         /* margin on mobile */
         @media (max-width: 640px) {
-       .with-image-bg {
-         height: 200px; {
             body {
-                font-size: 16px;
+                font-size: 18px;
             }
 
             .content {
@@ -149,16 +132,35 @@
                 padding-right: 0.5em;
             }
         }
-    }
-}
+        .with-image-bg {
+            position: relative;
+            background-size: cover;
+            margin-bottom: 2em;
+
+            /* Center everything inside */
+            min-height: 70svh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /* White text with a shadow */
+            color: white;
+            text-shadow: 0px 0px 30px black,
+                0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .with-image-bg {
+            background-image: url('header_cropped.jpg');
+        }
     </style>
 </head>
 
 <body>
     <div class="header with-image-bg">
-        <div class="headline">
+        <div class="content">
             <h1>The Fictional Inspirations Behind Species Names</h1>
-            <p class="subhead">From ancient myths to modern TV, scientists have often turned to fictional worlds when naming life on Earth.</p>
+            <p class="subhead">From ancient myths to modern TV, scientists have often turned to fictional worlds when naming life on Earth.
+            </p>
         </div>
     </div>
     <div class="content">
@@ -204,8 +206,6 @@
                   Sheldon Cooper's catchphrase on "The Big Bang Theory" and the photographer,
                    Denis Riek, who first photographed it. Credit: Dr Lisa-Ann Gershwin, CC0, via Wikimedia Commons</figcaption>
         </figure>
-        <p>______________________________________________________
-        </p>
 
         <p>When did this practice of naming taxa after fictional works begin? According to the data, 
             scientists began drawing inspiration from fiction to name species as far back as the late 1750s.
@@ -299,11 +299,11 @@
         </p>
 
         <div class="hover">
-        <p>Banner image credit: Freepik</p>
+        <p>Header image credit: Freepik</p>
         </div>
-
-        <div class="sources">
-            <div class="content">
+        <div class="content">
+            <div class="sources">
+            <p>____________________________________________________________________</p>
             <p>DATA SOURCES:</p>
             <p>1. GBIF Secretariat. (2023). <em>GBIF Backbone Taxonomy.</em> Checklist dataset, <a href = "https://doi.org/10.15468/39omei">https://doi.org/10.15468/39omei</a> accessed via GBIF.org on 2025‑07‑10. </p>
             <p>2. Bánki, O., Roskov, Y., Döring, M., Ower, G., Hernández Robles, D. R., Plata Corredor, C. A., Stjernegaard Jeppesen, T., Örn, A., Pape, T., Hobern, D., Garnett, S., Little, H., DeWalt, R. E., Miller, J., & Orrell, T. (2025). <em>Catalogue of Life</em> (Annual Checklist 2025). Catalogue of Life Foundation, Amsterdam, Netherlands. <a href = "https://doi.org/10.48580/dgr6n">https://doi.org/10.48580/dgr6n</a></p>
