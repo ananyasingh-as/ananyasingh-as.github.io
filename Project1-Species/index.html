@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Fictional Inspirations Behind Species Names</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <style>
+
+        body {
+            margin: 0;
+            font-size: 18px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-rendering: optimizeLegibility;
+        }
+
+        .content {
+            max-width: 640px;
+            margin: auto;
+        }
+
+        .headline {
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .header {
+            padding: 3em 0;
+
+        }
+
+        a {
+            color: #f05349;
+        }
+
+        .sources {
+            font-size: 14px;
+            color: #666
+        }
+
+        .hover {
+            font-size: 14px;
+            color: #666
+        }
+
+        .footer {
+            background: #f0efeb;
+            text-align: center;
+            font-size: 0.8em;
+            margin-top: 4em;
+            padding: 4em 0;
+        }
+
+        figure {
+            margin: 0;
+            padding-bottom: 1.2em;
+        }
+
+        figcaption {
+            font-size: 0.8em;
+            text-align: center;
+            margin-top: 0.5em;
+            color: #666;
+        }
+
+        h1 {
+            font-family: 'Lora', Georgia, serif;
+            font-weight: bold;
+            font-size: 3em;
+            line-height: 1.1;
+            text-align: center
+        }
+
+        .subhead {
+            font-family: 'Lora', Georgia, serif;
+            text-align: center
+        }
+
+        .with-image-bg {
+            position: relative;
+            background-size: cover;
+            margin-bottom: 2em;
+
+            /* Center everything inside */
+            min-height: 70svh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /* White text with a shadow */
+            color: black;
+    
+        }
+
+        .with-image-bg {
+            background-image: url('header.jpg');
+        }
+
+
+        iframe,
+        img,
+        video {
+            max-width: 100%;
+        }
+
+        p {
+            line-height: 1.6;
+            margin: 0;
+            padding-bottom: 1.2em;
+        }
+
+        ul {
+            margin: 0;
+            padding-bottom: 1em;
+            line-height: 1.6;
+        }
+
+        iframe {
+            padding-bottom: 1.2em;
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+            background: #fffbaf;
+            font-size: 0.85em;
+        }
+
+        .full-width figure {
+            text-align: center;
+        }
+
+        /* margin on mobile */
+        @media (max-width: 640px) {
+            body {
+                font-size: 16px;
+            }
+
+            .content {
+                padding-left: 0.5em;
+                padding-right: 0.5em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header with-image-bg">
+        <div class="headline">
+            <h1>The Fictional Inspirations Behind Species Names</h1>
+            <p class="subhead">From ancient myths to modern TV, scientists have often turned to fictional worlds when naming life on Earth.</p>
+        </div>
+    </div>
+    <div class="content">
+        <div class="byline">
+            <p>By Ananya Singh</a></p>
+        </div>
+  
+        <p>In 2011, researchers stumbled upon a previously-undescribed species of fungus on the island of Borneo and named it 
+            <em><a href = "https://www.bbc.com/news/science-environment-13874049">Spongiforma squarepantsii</a></em>, after Nickelodeon’s cartoon character, SpongeBob SquarePants. 
+            While this one of the more famous examples of a species being named after a fictional character, it is far from being the only one. When it comes to naming 
+            the natural world, scientists have often drawn inspiration from fictional works and pop culture. Shakespeare’s plays,
+            the works of authors such as Isabel Allende, Herman Melville and H.P. Lovecraft, childhood classics like “The Adventures of Pinocchio”
+            and “Winnie The Pooh”, and even television series like “The Big Bang Theory” and “Stranger Things” have found their way into the
+            world of scientific naming. But which fictional works have inspired the most species names? 
+        </p>
+        <p>Since there is no officially collated list to analyse naming trends for organisms, I started with Wikipedia 
+            lists of species named after fictional works and cross-checked these with the Global Biodiversity Information
+            Facility (<a href = "https://www.gbif.org/">GBIF</a>), an international network which provides open-access data on biodiversity. Using the GBIF API,
+            I extracted the taxonomic information for each species. For some species, GBIF was only able to match the name
+            to a higher taxonomic category. I manually re-checked these using another source—<a href = "https://www.catalogueoflife.org/">The Catalogue of Life</a> (COL).
+            More details regarding the methodology can be found on my Github.
+        </p>
+
+        <p>The system of binomial nomenclature used to name species today is meant to standardize names for global use.
+            It employs a two-part scientific name to describe a species—the first represents the genus and the second
+            the species (example: <em>Homo sapiens</em> for humans).
+        </p>
+
+        <p>The final dataset lists 763 taxa, of which 86 are extinct. <em>Note: This dataset is far from exhaustive.
+            It is possibly only a subset of the species whose names have been inspired from fiction over time. 
+            As such, the numbers are not absolute and only refer to the accepted names in this dataset.</em> Of the 763
+            taxa, 80 are names of genera referencing fictional works, while the remaining 683 are species names. 
+            Notably, each genus may have a number of closely-related species grouped under it. Wherever the name 
+            of the genus is inspired from fiction, this dataset lists only the overarching genus name and not the
+            names of the species it contains. 
+        </p>
+
+        <figure>
+            <img
+                src="1024px-Bazinga_rieki1.jpg">
+            <figcaption><em>Bazinga rieki</em>, a jellyfish
+                 <a href = "https://www.huffpost.com/entry/bazinga-jellyfish_n_3762071">named</a> after
+                  Sheldon Cooper's catchphrase on "The Big Bang Theory" and the photographer,
+                   Denis Riek, who first photographed it. Credit: Dr Lisa-Ann Gershwin, CC0, via Wikimedia Commons</figcaption>
+        </figure>
+        <p>______________________________________________________
+        </p>
+
+        <p>When did this practice of naming taxa after fictional works begin? According to the data, 
+            scientists began drawing inspiration from fiction to name species as far back as the late 1750s.
+            The number of scientific names drawn from fictional sources see an increase 1998 onwards, 
+            with 2012 and 2019 being peak years. 30 of the 68 taxa named in 2012 as per this dataset
+            were named after Terry Pratchett’s comic series  “Discworld”.
+            
+        <p class ="hover"><em>Hover over to see the number of taxa named after fictional sources each year.</em></p>
+        </p>
+
+       <iframe src='https://flo.uri.sh/story/3223883/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/story/3223883/?utm_source=embed&utm_campaign=story/3223883' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
+
+        <p>While the most recent year of description in this dataset is 2025, this may not include all species named in the last year or two as 
+            there was no GBIF or COL data for some entries. 
+        </p>
+
+        <p>Over the years, scientists have drawn inspiration from several kinds of fictional sources—turning to films, comics, television series, 
+            games and even a radio drama. However, literature’s imprint in scientific naming is the most prominent.
+        </p>
+
+        <p class ="hover"><em>Hover over the bars to see the breakup by number of species and genera.</em></p>
+        
+
+       <iframe src='https://flo.uri.sh/visualisation/24209589/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/24209589/?utm_source=embed&utm_campaign=visualisation/24209589' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
+
+        <p>
+            
+            While myriad fictional works have been referenced in species names, one author’s works stand out more than others. 
+            Here’s a look at the top 10 fictional works which have inspired species names over time.
+        </p>
+
+        <iframe src='https://flo.uri.sh/visualisation/24209783/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/24209783/?utm_source=embed&utm_campaign=visualisation/24209783' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
+
+        <p>J.R.R. Tolkien’s legendarium has been referenced the most in scientific names in this dataset,
+            far surpassing the influence of any other fictional work. This number does not include the species named after
+            Tolkien himself. Other works that have inspired a long list of taxa names include The Star Wars franchise, Terry 
+            Pratchett’s “Discworld”, Harry Potter and Victor Hugo’s works—specifically, “The Hunchback of Notre Dame” which
+            accounts for 18 out of the 19 taxa names referencing his work.
+        </p>
+
+        <p>When choosing species names, scientists may turn to fiction and cultural references for a range of reasons.
+            Some do it to honor the work of the author or creator, such as in the case of <em><a href = "https://www.researchgate.net/publication/264549425_The_Spider_Wasps_Hymenoptera_Pompilidae_of_the_Dominican_Republic">Dipogon marlowei</a></em>, a spider wasp
+            named to honour crime writer Raymond Chandler, who created the famous fictional private investigator, Philip 
+            Marlowe. At times, a specific characteristic or behaviour of the species reminds researchers of a character in
+            a book or on screen. <em><a href = "https://www.nhm.ac.uk/discover/animals-named-after-mythological-creatures.html">Ampulex dementor</a></em>, a wasp that partially paralyzes its prey with venom before consuming it,
+            got its name from the “soul-sucking” dementors in the Harry Potter series. 
+        </p>
+
+         <figure>
+            <img
+                src="1024px-Calumma_tarzan_01.jpg">
+            <figcaption><em>Calumma tarzan</em>, a critically endangered chameleon named after Tarzan. Credit: Sebastian Gehring, CC BY-SA 3.0, via Wikimedia Commons</figcaption>
+        </figure>
+
+        <p>Then, there is <em>Calumma tarzan</em>, a critically-endangered chameleon which was first observed in 2009 near a village 
+            in Madagascar. It was named after both this village, which was previously called Tarzanville, and the fictional
+            character created by Edgar Rice Burroughs. At the time of publication, the researchers <a href ="https://www.nationalgeographic.com/science/article/100901-tarzan-chameleon-tarzanville-forest-science-environment">said</a> that naming the chameleon
+            after Tarzan could be a way to "promote the conservation of this species and of course of the forest that it's 
+            living in.” This is a key argument made in favour of naming species using pop cultural references. Some researchers
+            believe it offers a way to draw public attention to threatened species or organisms that may otherwise go unnoticed.
+            A 2023 <a href ="https://conbio.onlinelibrary.wiley.com/doi/10.1111/cobi.14184">study</a> found that “species named after celebrities across taxonomic groups generally had higher Wikipedia
+            page views than control species.” This was especially true for invertebrates, which the authors describe as “an
+            underappreciated group that is essential for sustaining all life, yet faces critically high levels of extinction.” 
+        </p>
+
+        <p>Here’s a look at the taxonomic classes with species most often named after fictional works.
+        </p>
+
+        <iframe src='https://flo.uri.sh/story/3225974/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/story/3225974/?utm_source=embed&utm_campaign=story/3225974' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
+
+        <p>According to the data, the class Insecta, which includes all insects, have most often received names derived from fictional sources. 
+            Insects are followed by the class Arachnida (includes spiders, scorpions, ticks and mites among others) and Malacostraca (a sub-group
+            of crustaceans including crabs, lobsters, krill, shrimp, crayfish). In the above chart, most taxa that fall under the class Mammalia
+            are extinct species and fossil mammals. Other classes that have often been named after fictional works include mollusks like slugs 
+            and snails belonging to the class Gastropoda, scaly reptiles classed as Squamata, and Amphibia including frogs, toads, salamanders,
+            among others. 58 taxa in this dataset did not have a class recorded.
+        </p>
+        
+        <p>Naming species after cultural figures or fictional works inevitably propels them into the limelight. 
+            Scientists who named the fungus after SpongeBob SquarePants <a href ="https://www.mushroomthejournal.com/spongiforma-squarepantsii/">noted</a> how there were over 24,000 
+            links to “SpongeBob mushroom” within 24 hours of publishing their paper, which would probably not 
+            have been the case had they named it something else. But they also state that this was not the 
+            primary reason behind the name. They were, in fact, “just having fun.” 
+        </p>
+
+        <p>The worlds of taxonomy and scientific nomenclature are not without <a href = "https://www.smithsonianmag.com/science-nature/why-some-scientists-want-to-stop-naming-organisms-after-people-180982249/">controversy</a>. But the fact that so many scientists have drawn from 
+            fictional and cultural references when choosing species names speaks to not only the wide influence of these works but also the 
+            creativity inherent in this act. As one paper exploring the culture and consequences of scientific naming <a href = "https://pmc.ncbi.nlm.nih.gov/articles/PMC10618856/">concludes</a>, “All this is an
+            excellent reminder that science and scientists are socially situated, and that human nature will always be inextricable from our pursuit 
+            of knowledge."
+        </p>
+
+        <div class="hover">
+        <p>Banner image credit: Freepik</p>
+        </div>
+
+        <div class="sources">
+            <p>DATA SOURCES:</p>
+            <p>1. GBIF Secretariat. (2023). <em>GBIF Backbone Taxonomy.</em> Checklist dataset, <a href = "https://doi.org/10.15468/39omei">https://doi.org/10.15468/39omei</a> accessed via GBIF.org on 2025‑07‑10. </p>
+            <p>2. Bánki, O., Roskov, Y., Döring, M., Ower, G., Hernández Robles, D. R., Plata Corredor, C. A., Stjernegaard Jeppesen, T., Örn, A., Pape, T., Hobern, D., Garnett, S., Little, H., DeWalt, R. E., Miller, J., & Orrell, T. (2025). <em>Catalogue of Life</em> (Annual Checklist 2025). Catalogue of Life Foundation, Amsterdam, Netherlands. <a href = "https://doi.org/10.48580/dgr6n">https://doi.org/10.48580/dgr6n</a></p>
+            <p>3. List of organisms named after works of fiction. (2025, 12 July). In <em>Wikipedia</em>. <a href = "https://en.wikipedia.org/wiki/List_of_organisms_named_after_works_of_fiction">https://en.wikipedia.org/wiki/List_of_organisms_named_after_works_of_fiction</a></p>
+            <p>4. List of things named after J. R. R. Tolkien and his works. (2025, 4 July). In <em>Wikipedia</em>. <a href = "https://en.wikipedia.org/wiki/List_of_things_named_after_J._R._R._Tolkien_and_his_works">https://en.wikipedia.org/wiki/List_of_things_named_after_J._R._R._Tolkien_and_his_works</a></p>
+            <p>5. List of organisms named after the Star Wars series. (2025, 4 July). In <em>Wikipedia</em>. <a href = "https://en.wikipedia.org/wiki/List_of_organisms_named_after_the_Star_Wars_series">https://en.wikipedia.org/wiki/List_of_organisms_named_after_the_Star_Wars_series</a></p>
+            <p>6. List of organisms named after the Harry Potter series. (2025, 22 May). In <em>Wikipedia</em>. <a href ="https://en.wikipedia.org/wiki/List_of_organisms_named_after_the_Harry_Potter_series">https://en.wikipedia.org/wiki/List_of_organisms_named_after_the_Harry_Potter_series</a></p>
+        </div>
+    </div>
+
+    <div class="footer">
+       
+            <p>This is a student project completed as part of the <a href="https://ledeprogram.com/">Lede Program.</a></p>
+            <p><a href ="https://github.com/ananyasingh-as/Project1_Species-Names">Github</a></p>
+        
+    </div>
+    </div>
+
+</body>
+
+</html>
