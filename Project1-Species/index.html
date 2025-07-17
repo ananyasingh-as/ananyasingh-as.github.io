@@ -80,7 +80,7 @@
 
         .subhead {
             font-family: 'Lora', Georgia, serif;
-            text-align: center
+            
         }
 
         .byline {
@@ -123,6 +123,10 @@
 
         /* margin on mobile */
         @media (max-width: 640px) {
+              h1 {
+                color: white;
+            }
+            
             body {
                 font-size: 18px;
             }
@@ -133,7 +137,8 @@
             }
             .with-image-bg {
                 background-position: center;
-                color: white
+                text-shadow: 0px 0px 30px black,
+                0px 0px 10px rgba(0, 0, 0, 0.5);
             }
         }
         .with-image-bg {
